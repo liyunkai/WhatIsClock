@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930276191BF9765F00D058F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 930276181BF9765F00D058F2 /* main.m */; };
-		9302761C1BF9765F00D058F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302761B1BF9765F00D058F2 /* AppDelegate.m */; };
-		9302761F1BF9765F00D058F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302761E1BF9765F00D058F2 /* ViewController.m */; };
-		930276221BF9765F00D058F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930276201BF9765F00D058F2 /* Main.storyboard */; };
-		930276251BF9765F00D058F2 /* WhatIsClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 930276231BF9765F00D058F2 /* WhatIsClock.xcdatamodeld */; };
-		930276271BF9765F00D058F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930276261BF9765F00D058F2 /* Assets.xcassets */; };
-		9302762A1BF9765F00D058F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930276281BF9765F00D058F2 /* LaunchScreen.storyboard */; };
+		9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */; };
+		9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAF91BFAC0420041EBC2 /* Main.storyboard */; };
+		9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */; };
+		9348AB001BFAC0420041EBC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAFE1BFAC0420041EBC2 /* LaunchScreen.storyboard */; };
+		9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */; };
+		9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */; };
+		9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB111BFAC8260041EBC2 /* WICTTS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		930276141BF9765F00D058F2 /* WhatIsClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		930276181BF9765F00D058F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9302761A1BF9765F00D058F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9302761B1BF9765F00D058F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9302761D1BF9765F00D058F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9302761E1BF9765F00D058F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		930276211BF9765F00D058F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		930276241BF9765F00D058F2 /* WhatIsClock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatIsClock.xcdatamodel; sourceTree = "<group>"; };
-		930276261BF9765F00D058F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		930276291BF9765F00D058F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9302762B1BF9765F00D058F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9348AAF01BFAC0420041EBC2 /* WhatIsClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9348AAFA1BFAC0420041EBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9348AAFF1BFAC0420041EBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9348AB011BFAC0420041EBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatIsClock-Bridging-Header.h"; sourceTree = "<group>"; };
+		9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockDisplayViewController.swift; sourceTree = "<group>"; };
+		9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockSettingViewController.swift; sourceTree = "<group>"; };
+		9348AB111BFAC8260041EBC2 /* WICTTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICTTS.swift; sourceTree = "<group>"; };
+		9348AB131BFAE66F0041EBC2 /* WICPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WICPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		930276111BF9765F00D058F2 /* Frameworks */ = {
+		9348AAED1BFAC0420041EBC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,57 +41,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9302760B1BF9765F00D058F2 = {
+		9348AAE71BFAC0420041EBC2 = {
 			isa = PBXGroup;
 			children = (
-				930276161BF9765F00D058F2 /* WhatIsClock */,
-				930276151BF9765F00D058F2 /* Products */,
+				9348AAF21BFAC0420041EBC2 /* WhatIsClock */,
+				9348AAF11BFAC0420041EBC2 /* Products */,
+				9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
-		930276151BF9765F00D058F2 /* Products */ = {
+		9348AAF11BFAC0420041EBC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				930276141BF9765F00D058F2 /* WhatIsClock.app */,
+				9348AAF01BFAC0420041EBC2 /* WhatIsClock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		930276161BF9765F00D058F2 /* WhatIsClock */ = {
+		9348AAF21BFAC0420041EBC2 /* WhatIsClock */ = {
 			isa = PBXGroup;
 			children = (
-				9302761A1BF9765F00D058F2 /* AppDelegate.h */,
-				9302761B1BF9765F00D058F2 /* AppDelegate.m */,
-				9302761D1BF9765F00D058F2 /* ViewController.h */,
-				9302761E1BF9765F00D058F2 /* ViewController.m */,
-				930276201BF9765F00D058F2 /* Main.storyboard */,
-				930276261BF9765F00D058F2 /* Assets.xcassets */,
-				930276281BF9765F00D058F2 /* LaunchScreen.storyboard */,
-				9302762B1BF9765F00D058F2 /* Info.plist */,
-				930276231BF9765F00D058F2 /* WhatIsClock.xcdatamodeld */,
-				930276171BF9765F00D058F2 /* Supporting Files */,
+				9348AB0A1BFAC2A30041EBC2 /* STT */,
+				9348AB0B1BFAC2A30041EBC2 /* TTS */,
+				9348AB0C1BFAC2A30041EBC2 /* UI */,
+				9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */,
+				9348AAF91BFAC0420041EBC2 /* Main.storyboard */,
+				9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */,
+				9348AAFE1BFAC0420041EBC2 /* LaunchScreen.storyboard */,
+				9348AB011BFAC0420041EBC2 /* Info.plist */,
+				9348AB131BFAE66F0041EBC2 /* WICPrefixHeader.pch */,
 			);
 			path = WhatIsClock;
 			sourceTree = "<group>";
 		};
-		930276171BF9765F00D058F2 /* Supporting Files */ = {
+		9348AB0A1BFAC2A30041EBC2 /* STT */ = {
 			isa = PBXGroup;
 			children = (
-				930276181BF9765F00D058F2 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = STT;
+			sourceTree = "<group>";
+		};
+		9348AB0B1BFAC2A30041EBC2 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				9348AB111BFAC8260041EBC2 /* WICTTS.swift */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		9348AB0C1BFAC2A30041EBC2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */,
+				9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		930276131BF9765F00D058F2 /* WhatIsClock */ = {
+		9348AAEF1BFAC0420041EBC2 /* WhatIsClock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9302762E1BF9765F00D058F2 /* Build configuration list for PBXNativeTarget "WhatIsClock" */;
+			buildConfigurationList = 9348AB041BFAC0420041EBC2 /* Build configuration list for PBXNativeTarget "WhatIsClock" */;
 			buildPhases = (
-				930276101BF9765F00D058F2 /* Sources */,
-				930276111BF9765F00D058F2 /* Frameworks */,
-				930276121BF9765F00D058F2 /* Resources */,
+				9348AAEC1BFAC0420041EBC2 /* Sources */,
+				9348AAED1BFAC0420041EBC2 /* Frameworks */,
+				9348AAEE1BFAC0420041EBC2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -99,24 +115,25 @@
 			);
 			name = WhatIsClock;
 			productName = WhatIsClock;
-			productReference = 930276141BF9765F00D058F2 /* WhatIsClock.app */;
+			productReference = 9348AAF01BFAC0420041EBC2 /* WhatIsClock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9302760C1BF9765F00D058F2 /* Project object */ = {
+		9348AAE81BFAC0420041EBC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = LyonTK;
 				TargetAttributes = {
-					930276131BF9765F00D058F2 = {
+					9348AAEF1BFAC0420041EBC2 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
-			buildConfigurationList = 9302760F1BF9765F00D058F2 /* Build configuration list for PBXProject "WhatIsClock" */;
+			buildConfigurationList = 9348AAEB1BFAC0420041EBC2 /* Build configuration list for PBXProject "WhatIsClock" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,56 +141,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 9302760B1BF9765F00D058F2;
-			productRefGroup = 930276151BF9765F00D058F2 /* Products */;
+			mainGroup = 9348AAE71BFAC0420041EBC2;
+			productRefGroup = 9348AAF11BFAC0420041EBC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				930276131BF9765F00D058F2 /* WhatIsClock */,
+				9348AAEF1BFAC0420041EBC2 /* WhatIsClock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		930276121BF9765F00D058F2 /* Resources */ = {
+		9348AAEE1BFAC0420041EBC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9302762A1BF9765F00D058F2 /* LaunchScreen.storyboard in Resources */,
-				930276271BF9765F00D058F2 /* Assets.xcassets in Resources */,
-				930276221BF9765F00D058F2 /* Main.storyboard in Resources */,
+				9348AB001BFAC0420041EBC2 /* LaunchScreen.storyboard in Resources */,
+				9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */,
+				9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		930276101BF9765F00D058F2 /* Sources */ = {
+		9348AAEC1BFAC0420041EBC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930276251BF9765F00D058F2 /* WhatIsClock.xcdatamodeld in Sources */,
-				9302761F1BF9765F00D058F2 /* ViewController.m in Sources */,
-				9302761C1BF9765F00D058F2 /* AppDelegate.m in Sources */,
-				930276191BF9765F00D058F2 /* main.m in Sources */,
+				9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */,
+				9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */,
+				9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */,
+				9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		930276201BF9765F00D058F2 /* Main.storyboard */ = {
+		9348AAF91BFAC0420041EBC2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				930276211BF9765F00D058F2 /* Base */,
+				9348AAFA1BFAC0420041EBC2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		930276281BF9765F00D058F2 /* LaunchScreen.storyboard */ = {
+		9348AAFE1BFAC0420041EBC2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				930276291BF9765F00D058F2 /* Base */,
+				9348AAFF1BFAC0420041EBC2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +198,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9302762C1BF9765F00D058F2 /* Debug */ = {
+		9348AB021BFAC0420041EBC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,15 +234,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9302762D1BF9765F00D058F2 /* Release */ = {
+		9348AB031BFAC0420041EBC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -263,64 +281,56 @@
 			};
 			name = Release;
 		};
-		9302762F1BF9765F00D058F2 /* Debug */ = {
+		9348AB051BFAC0420041EBC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhatIsClock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NG.WhatIsClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhatIsClock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		930276301BF9765F00D058F2 /* Release */ = {
+		9348AB061BFAC0420041EBC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhatIsClock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NG.WhatIsClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhatIsClock-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9302760F1BF9765F00D058F2 /* Build configuration list for PBXProject "WhatIsClock" */ = {
+		9348AAEB1BFAC0420041EBC2 /* Build configuration list for PBXProject "WhatIsClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9302762C1BF9765F00D058F2 /* Debug */,
-				9302762D1BF9765F00D058F2 /* Release */,
+				9348AB021BFAC0420041EBC2 /* Debug */,
+				9348AB031BFAC0420041EBC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9302762E1BF9765F00D058F2 /* Build configuration list for PBXNativeTarget "WhatIsClock" */ = {
+		9348AB041BFAC0420041EBC2 /* Build configuration list for PBXNativeTarget "WhatIsClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9302762F1BF9765F00D058F2 /* Debug */,
-				930276301BF9765F00D058F2 /* Release */,
+				9348AB051BFAC0420041EBC2 /* Debug */,
+				9348AB061BFAC0420041EBC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		930276231BF9765F00D058F2 /* WhatIsClock.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				930276241BF9765F00D058F2 /* WhatIsClock.xcdatamodel */,
-			);
-			currentVersion = 930276241BF9765F00D058F2 /* WhatIsClock.xcdatamodel */;
-			path = WhatIsClock.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 9302760C1BF9765F00D058F2 /* Project object */;
+	rootObject = 9348AAE81BFAC0420041EBC2 /* Project object */;
 }
