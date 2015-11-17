@@ -29,6 +29,20 @@
     
 //    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:@"你好"]; //需要转换的文本
 //    [av speakUtterance:utterance];
+    
+    NSDate *now = [NSDate date];
+//    NSString *formatString = [NSDateFormatter dateFormatFromTemplate:@"YY-MM-DD HH:MM:SS" options:0 locale:[NSLocale currentLocale]];
+    NSString *formatString = [NSDateFormatter localizedStringFromDate:now dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle];
+    NSLog(formatString?:@"");
+}
+
+//NSDate 2 NSString
+- (NSString *)dateToString:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *strDate = [dateFormatter stringFromDate:date];
+    return strDate;
 }
 
 - (void)didReceiveMemoryWarning {
