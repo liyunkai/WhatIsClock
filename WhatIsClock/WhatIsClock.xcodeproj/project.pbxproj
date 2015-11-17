@@ -14,6 +14,7 @@
 		9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */; };
 		9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */; };
 		9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB111BFAC8260041EBC2 /* WICTTS.swift */; };
+		93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9348AAFF1BFAC0420041EBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9348AB011BFAC0420041EBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatIsClock-Bridging-Header.h"; sourceTree = "<group>"; };
+		9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatIsClock-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockDisplayViewController.swift; sourceTree = "<group>"; };
 		9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockSettingViewController.swift; sourceTree = "<group>"; };
 		9348AB111BFAC8260041EBC2 /* WICTTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICTTS.swift; sourceTree = "<group>"; };
 		9348AB131BFAE66F0041EBC2 /* WICPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WICPrefixHeader.pch; sourceTree = "<group>"; };
+		93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockSettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,6 @@
 			children = (
 				9348AAF21BFAC0420041EBC2 /* WhatIsClock */,
 				9348AAF11BFAC0420041EBC2 /* Products */,
-				9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +62,7 @@
 		9348AAF21BFAC0420041EBC2 /* WhatIsClock */ = {
 			isa = PBXGroup;
 			children = (
+				93A26C091BFB1766003588F3 /* Model */,
 				9348AB0A1BFAC2A30041EBC2 /* STT */,
 				9348AB0B1BFAC2A30041EBC2 /* TTS */,
 				9348AB0C1BFAC2A30041EBC2 /* UI */,
@@ -70,6 +72,7 @@
 				9348AAFE1BFAC0420041EBC2 /* LaunchScreen.storyboard */,
 				9348AB011BFAC0420041EBC2 /* Info.plist */,
 				9348AB131BFAE66F0041EBC2 /* WICPrefixHeader.pch */,
+				9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */,
 			);
 			path = WhatIsClock;
 			sourceTree = "<group>";
@@ -96,6 +99,14 @@
 				9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		93A26C091BFB1766003588F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */,
 				9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */,
 				9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */,
+				93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */,
 				9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +341,7 @@
 				9348AB061BFAC0420041EBC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

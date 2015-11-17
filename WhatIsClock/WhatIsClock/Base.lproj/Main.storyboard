@@ -85,14 +85,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-Eg-GjB">
+                                <rect key="frame" x="257" y="378" width="67" height="30"/>
+                                <state key="normal" title="注册闹钟"/>
+                                <connections>
+                                    <action selector="onRegisterClockBtnHit:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LOM-Dy-f7R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SDf-Eg-GjB" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="83T-N8-8xa"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Mts-S9-eL5"/>
                             <constraint firstItem="glq-Lu-mNk" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Z3O-Rh-wKs"/>
                             <constraint firstItem="glq-Lu-mNk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="12" id="cjV-Ze-hEE"/>
+                            <constraint firstItem="SDf-Eg-GjB" firstAttribute="top" secondItem="NDk-cv-Gan" secondAttribute="bottom" constant="33" id="exR-8f-Mif"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="glq-Lu-mNk" secondAttribute="trailing" constant="-19" id="uOG-CQ-jJ5"/>
