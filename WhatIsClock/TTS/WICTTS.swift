@@ -12,13 +12,12 @@ import Foundation
 class WICTTS {
     
     static var isChinese: Bool = { ()->Bool in
-        print("lllllllllllllll"+AVSpeechSynthesisVoice.currentLanguageCode())
         if AVSpeechSynthesisVoice.currentLanguageCode() == "zh-CN"{
             return true
         }else{
             return false
         }
-    }()
+    }()//懒初始化
     
     static var tts:AVSpeechSynthesizer = AVSpeechSynthesizer()
 
