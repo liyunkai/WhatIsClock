@@ -11,13 +11,28 @@ import Foundation
 
 class WICTTS {
     
+    static var isChinese: Bool = { ()->Bool in
+        print("lllllllllllllll"+AVSpeechSynthesisVoice.currentLanguageCode())
+        if AVSpeechSynthesisVoice.currentLanguageCode() == "zh-CN"{
+            return true
+        }else{
+            return false
+        }
+    }()
+    
     static var tts:AVSpeechSynthesizer = AVSpeechSynthesizer()
 
     class func speak(Txt txt:String){
-        let localVoice = AVSpeechSynthesisVoice(language: "zh-CN")
         let utterance = AVSpeechUtterance(string: txt)
-        utterance.voice = localVoice
         tts.speakUtterance(utterance)
+    }
+    
+    class func language(Chinese:String, English:String) -> String{
+        if true == isChinese {
+            return Chinese
+        }else{
+            return English
+        }
     }
     
     

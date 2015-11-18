@@ -16,20 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-//        let notifTypes: UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Sound
-        let notifSetting = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: Set())
-        UIApplication .sharedApplication().registerUserNotificationSettings(notifSetting)
-        
-        if let clockNotif  = launchOptions?[UIApplicationLaunchOptionsLocalNotificationKey] as? UILocalNotification{
-            WICTTS.speak(Txt: String(clockNotif.fireDate))
-        }
-        
+        WICNotificationManager.registerNotificationTypeOnLaunch()
         
         return true
     }
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-//        WICTTS.speak(Txt: String(notification.fireDate))
+        WICNotificationManager.handleClockNotification(notification)
     }
 
     func applicationWillResignActive(application: UIApplication) {

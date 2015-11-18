@@ -14,6 +14,7 @@
 		9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */; };
 		9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */; };
 		9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB111BFAC8260041EBC2 /* WICTTS.swift */; };
+		9399530C1BFC118F002C202D /* WICNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399530B1BFC118F002C202D /* WICNotificationManager.swift */; };
 		93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockSettingViewController.swift; sourceTree = "<group>"; };
 		9348AB111BFAC8260041EBC2 /* WICTTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICTTS.swift; sourceTree = "<group>"; };
 		9348AB131BFAE66F0041EBC2 /* WICPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WICPrefixHeader.pch; sourceTree = "<group>"; };
+		9399530B1BFC118F002C202D /* WICNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICNotificationManager.swift; sourceTree = "<group>"; };
 		93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockSettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */,
+				9399530B1BFC118F002C202D /* WICNotificationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */,
 				9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */,
 				93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */,
+				9399530C1BFC118F002C202D /* WICNotificationManager.swift in Sources */,
 				9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
