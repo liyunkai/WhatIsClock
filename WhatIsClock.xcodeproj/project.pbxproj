@@ -16,6 +16,7 @@
 		9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AB111BFAC8260041EBC2 /* WICTTS.swift */; };
 		9399530C1BFC118F002C202D /* WICNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399530B1BFC118F002C202D /* WICNotificationManager.swift */; };
 		93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */; };
+		93D3E15D1BFDD43F00161F3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D3E15F1BFDD43F00161F3A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,6 @@
 		9348AAFA1BFAC0420041EBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9348AAFF1BFAC0420041EBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9348AB011BFAC0420041EBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatIsClock-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockDisplayViewController.swift; sourceTree = "<group>"; };
 		9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockSettingViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +36,12 @@
 		93D3E1531BFDAEE600161F3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		93D3E1581BFDD12900161F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		93D3E15A1BFDD13400161F3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		93D3E15E1BFDD43F00161F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93D3E1601BFDD44300161F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93D3E1611BFDD44500161F3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		93D3E1621BFEB6D100161F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		93D3E1641BFEB6D300161F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		93D3E1651BFEB6D400161F3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +80,12 @@
 				9348AB0C1BFAC2A30041EBC2 /* UI */,
 				9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */,
 				9348AAF91BFAC0420041EBC2 /* Main.storyboard */,
-				9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */,
 				9348AAFE1BFAC0420041EBC2 /* LaunchScreen.storyboard */,
-				9348AB011BFAC0420041EBC2 /* Info.plist */,
+				93D3E1631BFEB6D100161F3A /* Info.plist */,
+				93D3E15F1BFDD43F00161F3A /* Localizable.strings */,
 				9348AB131BFAE66F0041EBC2 /* WICPrefixHeader.pch */,
 				9348AB071BFAC0710041EBC2 /* WhatIsClock-Bridging-Header.h */,
+				9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */,
 			);
 			path = WhatIsClock;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9348AB001BFAC0420041EBC2 /* LaunchScreen.storyboard in Resources */,
+				93D3E15D1BFDD43F00161F3A /* Localizable.strings in Resources */,
 				9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */,
 				9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */,
 			);
@@ -218,6 +226,26 @@
 				93D3E15A1BFDD13400161F3A /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93D3E15F1BFDD43F00161F3A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D3E15E1BFDD43F00161F3A /* Base */,
+				93D3E1601BFDD44300161F3A /* en */,
+				93D3E1611BFDD44500161F3A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		93D3E1631BFEB6D100161F3A /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D3E1621BFEB6D100161F3A /* Base */,
+				93D3E1641BFEB6D300161F3A /* en */,
+				93D3E1651BFEB6D400161F3A /* zh-Hans */,
+			);
+			name = Info.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

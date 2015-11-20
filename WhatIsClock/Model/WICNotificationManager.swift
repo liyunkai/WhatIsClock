@@ -24,7 +24,7 @@ class WICNotificationManager {
             //actions
             let onlyAction = UIMutableUserNotificationAction()
             onlyAction.identifier = NOTIF_ACTION_LAUNCH_APP
-            onlyAction.title = "好的"
+            onlyAction.title = NSLocalizedString("好的", comment: "闹钟响了之后关闹钟的按钮")
             onlyAction.activationMode = UIUserNotificationActivationMode.Foreground
             onlyAction.destructive = false
             onlyAction.authenticationRequired = false
@@ -60,7 +60,7 @@ class WICNotificationManager {
         clockNotif.repeatInterval = NSCalendarUnit.Weekday
         clockNotif.timeZone = NSTimeZone()
         clockNotif.alertBody = String(model.fireDate)
-        clockNotif.alertAction = WICTTS.language("戳这里", English: "Hit Me")
+        clockNotif.alertAction = NSLocalizedString("戳这里", comment: "闹钟响了之后关闹钟的按钮")
         clockNotif.soundName = UILocalNotificationDefaultSoundName//目前是默认提示音
         if #available(iOS 8.2, *) {
             clockNotif.alertTitle = model.soundID
