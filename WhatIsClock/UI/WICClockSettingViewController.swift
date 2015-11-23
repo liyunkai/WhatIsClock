@@ -31,7 +31,7 @@ class WICClockSettingViewController: UIViewController {
         let timeSetted = self.datePicker!.date.dateByAddingTimeInterval(10)
         self.timeLabel.text = String(timeSetted)
 //        WICTTS.speak(Txt: self.timeLabel.text!)
-        let model:WICClockSettingModel = WICClockSettingModel(fireDate: timeSetted, isRepeat: false, soundID: "oneSound")
+        let model:WICClockSettingModel = WICClockSettingModel(fireDate: timeSetted, isRepeat: false, soundID: "oneSound", loop: NSCalendarUnit.Minute, isTaskOn: true, message: String.localizedStringWithFormat("%@", timeSetted), isVerbose: true)
         WICNotificationManager.registerClock(model)
     }
 

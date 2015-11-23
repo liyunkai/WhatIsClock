@@ -52,14 +52,15 @@ class WICNotificationManager {
     
     class func handleClockNotification(clockNotif: UILocalNotification) {
         WICTTS.speak(Txt: String(clockNotif.fireDate!))
+        WICNotificationManager.clearAllClocks()
     }
     
     class func registerClock(model: WICClockSettingModel){
         let clockNotif = UILocalNotification()
         clockNotif.fireDate = model.fireDate
-        clockNotif.repeatInterval = NSCalendarUnit.Weekday
+        clockNotif.repeatInterval = model.loop!
         clockNotif.timeZone = NSTimeZone()
-        clockNotif.alertBody = String(model.fireDate)
+        clockNotif.alertBody = model.message
         clockNotif.alertAction = NSLocalizedString("戳这里", comment: "闹钟响了之后关闹钟的按钮")
         clockNotif.soundName = UILocalNotificationDefaultSoundName//目前是默认提示音
         if #available(iOS 8.2, *) {
@@ -72,5 +73,9 @@ class WICNotificationManager {
         //set category,绑定闹钟动作//设置category会使得alertview上为 "取消，选项"
 //        clockNotif.category = NOTIF_CATEGORY_TIMEUP_CLOCK
         UIApplication.sharedApplication().scheduleLocalNotification(clockNotif)
+    }
+    
+    class func clearAllClocks() {
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
     }
 }
