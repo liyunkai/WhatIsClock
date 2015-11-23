@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9310B1CE1C02AABC0044A51B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D3E1631BFEB6D100161F3A /* Info.plist */; };
 		9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */; };
 		9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAF91BFAC0420041EBC2 /* Main.storyboard */; };
 		9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9310B1CC1C02AA9F0044A51B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		9310B1CD1C02AAA20044A51B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
 		9348AAF01BFAC0420041EBC2 /* WhatIsClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9348AAFA1BFAC0420041EBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,8 +43,6 @@
 		93D3E1601BFDD44300161F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		93D3E1611BFDD44500161F3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93D3E1621BFEB6D100161F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
-		93D3E1641BFEB6D300161F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
-		93D3E1651BFEB6D400161F3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +186,7 @@
 				9348AB001BFAC0420041EBC2 /* LaunchScreen.storyboard in Resources */,
 				93D3E15D1BFDD43F00161F3A /* Localizable.strings in Resources */,
 				9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */,
+				9310B1CE1C02AABC0044A51B /* Info.plist in Resources */,
 				9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,8 +244,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				93D3E1621BFEB6D100161F3A /* Base */,
-				93D3E1641BFEB6D300161F3A /* en */,
-				93D3E1651BFEB6D400161F3A /* zh-Hans */,
+				9310B1CC1C02AA9F0044A51B /* en */,
+				9310B1CD1C02AAA20044A51B /* zh-Hans */,
 			);
 			name = Info.plist;
 			sourceTree = "<group>";
@@ -339,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = WhatIsClock/Info.plist;
+				INFOPLIST_FILE = WhatIsClock/Base.lproj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NG.WhatIsClock;
@@ -354,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = WhatIsClock/Info.plist;
+				INFOPLIST_FILE = WhatIsClock/Base.lproj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NG.WhatIsClock;
