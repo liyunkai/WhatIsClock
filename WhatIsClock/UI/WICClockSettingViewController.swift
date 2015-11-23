@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WICClockSettingViewController: UIViewController {
+class WICClockSettingViewController: UITableViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var timeLabel: UILabel!
