@@ -25,6 +25,9 @@ class WICClockDisplayViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         self.scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
         super.init(coder: aDecoder)
+//        #if DEBUG //宏
+//            
+//        #endif
     }
     
 //    convenience init(){
