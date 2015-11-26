@@ -32,9 +32,25 @@ extension UIView{
     var height:Double{
         return Double(self.frame.size.height)
     }
-
-    
-
 }
 
+extension UIView
+{
+    class func initFromNib() -> UIView {
+        let mainBundle = NSBundle.mainBundle()
+        let className  = NSStringFromClass(self).componentsSeparatedByString(".").last ?? ""
+        
+        if ( mainBundle.pathForResource(className, ofType: "nib") != nil ) {
+            let objects = mainBundle.loadNibNamed(className, owner: self, options: [:])
+            
+            for object in objects {
+                if let view = object as? UIView {
+                    return view
+                }
+            }
+        }
+        
+        return UIView(frame: CGRectZero)
+    }
+}
 

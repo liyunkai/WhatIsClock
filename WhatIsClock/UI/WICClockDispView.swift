@@ -10,21 +10,15 @@ import Foundation
 import UIKit
 
 class WICClockDispView:  UIView, UITableViewDataSource, UITableViewDelegate{
-    
-    @IBOutlet var view: UIView!
-    
-    @IBOutlet weak var bannerImgView: UIImageView!
-    
-    @IBOutlet weak var clocksTableView: UITableView!
-    
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.awakeFromNib()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
     }
+    
     
     
     

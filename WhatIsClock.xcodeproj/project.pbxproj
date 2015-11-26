@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9304AD5F1C06DD9B00A861C2 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9304AD5E1C06DD9B00A861C2 /* View.xib */; };
+		9304AD5F1C06DD9B00A861C2 /* WICClockDispView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9304AD5E1C06DD9B00A861C2 /* WICClockDispView.xib */; };
 		9304AD611C06DEFF00A861C2 /* WICClockDispView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */; };
 		9304AD661C06E6EE00A861C2 /* UIView+ShortCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304AD651C06E6EE00A861C2 /* UIView+ShortCut.swift */; };
 		9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9304AD5E1C06DD9B00A861C2 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		9304AD5E1C06DD9B00A861C2 /* WICClockDispView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WICClockDispView.xib; sourceTree = "<group>"; };
 		9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockDispView.swift; sourceTree = "<group>"; };
 		9304AD651C06E6EE00A861C2 /* UIView+ShortCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ShortCut.swift"; sourceTree = "<group>"; };
 		9310B1CC1C02AA9F0044A51B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			children = (
 				9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */,
 				9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */,
-				9304AD5E1C06DD9B00A861C2 /* View.xib */,
+				9304AD5E1C06DD9B00A861C2 /* WICClockDispView.xib */,
 				9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */,
 			);
 			path = UI;
@@ -200,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9348AB001BFAC0420041EBC2 /* LaunchScreen.storyboard in Resources */,
-				9304AD5F1C06DD9B00A861C2 /* View.xib in Resources */,
+				9304AD5F1C06DD9B00A861C2 /* WICClockDispView.xib in Resources */,
 				93D3E15D1BFDD43F00161F3A /* Localizable.strings in Resources */,
 				9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */,
 				9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */,

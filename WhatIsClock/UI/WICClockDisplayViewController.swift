@@ -24,12 +24,11 @@ class WICClockDisplayViewController: UIViewController, UIScrollViewDelegate {
 
     required init?(coder aDecoder: NSCoder) {
         self.scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
-        self.viewL = WICClockDispView(frame: CGRect(x: 0, y: 0, width: self.scrollView.width, height: self.scrollView.height))
-        self.viewL.backgroundColor = UIColor.redColor()
-        self.viewM = WICClockDispView(frame: CGRect(x: self.viewL.right, y: 0, width: self.scrollView.width, height: self.scrollView.height))
-        self.viewM.backgroundColor = UIColor.greenColor()
-        self.viewR = WICClockDispView(frame: CGRect(x: self.viewM.right, y: 0, width: self.scrollView.width, height: self.scrollView.height))
-        self.viewR.backgroundColor = UIColor.blueColor()
+        self.viewL = WICClockDispView.initFromNib()
+        self.viewM = WICClockDispView.initFromNib()
+//        self.viewM =  NSBundle.mainBundle().loadNibNamed("WICClockDispView", owner: nil, options: nil)[0] as! WICClockDispView
+
+        self.viewR =  WICClockDispView.initFromNib()
         super.init(coder: aDecoder)
 //        #if DEBUG //宏
 //            
@@ -46,6 +45,13 @@ class WICClockDisplayViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.delegate = self
         scrollView.contentSize = CGSize(width: SCREEN_WIDTH * CGFloat(CLOCK_TAB_NUM), height: SCREEN_HEIGHT)
         scrollView.backgroundColor = UIColor.orangeColor()
+        
+        self.viewL.frame = CGRect(x: 0, y: 0, width: self.scrollView.width, height: self.scrollView.height)
+        self.viewM.frame = CGRect(x: self.viewL.right, y: 0, width: self.scrollView.width, height: self.scrollView.height)
+        self.viewR.frame = CGRect(x: self.viewM.right, y: 0, width: self.scrollView.width, height: self.scrollView.height)
+        self.viewL.backgroundColor = UIColor.redColor()
+        self.viewM.backgroundColor = UIColor.greenColor()
+        self.viewR.backgroundColor = UIColor.blueColor()
         scrollView.addSubview(self.viewL)
         scrollView.addSubview(self.viewM)
         scrollView.addSubview(self.viewR)
