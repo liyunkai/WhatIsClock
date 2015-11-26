@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9304AD5F1C06DD9B00A861C2 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9304AD5E1C06DD9B00A861C2 /* View.xib */; };
+		9304AD611C06DEFF00A861C2 /* WICClockDispView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */; };
+		9304AD661C06E6EE00A861C2 /* UIView+ShortCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304AD651C06E6EE00A861C2 /* UIView+ShortCut.swift */; };
 		9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348AAF31BFAC0420041EBC2 /* AppDelegate.swift */; };
 		9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAF91BFAC0420041EBC2 /* Main.storyboard */; };
 		9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9348AAFC1BFAC0420041EBC2 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9304AD5E1C06DD9B00A861C2 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICClockDispView.swift; sourceTree = "<group>"; };
+		9304AD651C06E6EE00A861C2 /* UIView+ShortCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ShortCut.swift"; sourceTree = "<group>"; };
 		9310B1CC1C02AA9F0044A51B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
 		9310B1CD1C02AAA20044A51B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
 		9348AAF01BFAC0420041EBC2 /* WhatIsClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9304AD641C06E6EE00A861C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9304AD651C06E6EE00A861C2 /* UIView+ShortCut.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		9348AAE71BFAC0420041EBC2 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +88,7 @@
 		9348AAF21BFAC0420041EBC2 /* WhatIsClock */ = {
 			isa = PBXGroup;
 			children = (
+				9304AD641C06E6EE00A861C2 /* Common */,
 				93A26C091BFB1766003588F3 /* Model */,
 				9348AB0A1BFAC2A30041EBC2 /* STT */,
 				9348AB0B1BFAC2A30041EBC2 /* TTS */,
@@ -110,6 +125,8 @@
 			children = (
 				9348AB0D1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift */,
 				9348AB0E1BFAC2A30041EBC2 /* WICClockSettingViewController.swift */,
+				9304AD5E1C06DD9B00A861C2 /* View.xib */,
+				9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -183,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9348AB001BFAC0420041EBC2 /* LaunchScreen.storyboard in Resources */,
+				9304AD5F1C06DD9B00A861C2 /* View.xib in Resources */,
 				93D3E15D1BFDD43F00161F3A /* Localizable.strings in Resources */,
 				9348AAFD1BFAC0420041EBC2 /* Assets.xcassets in Resources */,
 				9348AAFB1BFAC0420041EBC2 /* Main.storyboard in Resources */,
@@ -196,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9304AD661C06E6EE00A861C2 /* UIView+ShortCut.swift in Sources */,
 				9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */,
 				9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */,
 				9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */,
+				9304AD611C06DEFF00A861C2 /* WICClockDispView.swift in Sources */,
 				93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */,
 				9399530C1BFC118F002C202D /* WICNotificationManager.swift in Sources */,
 				9348AAF41BFAC0420041EBC2 /* AppDelegate.swift in Sources */,

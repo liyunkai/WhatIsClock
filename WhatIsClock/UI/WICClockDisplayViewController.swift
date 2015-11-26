@@ -8,10 +8,10 @@
 
 import UIKit
 
-class WICClockDisplayViewController: UIViewController {
+class WICClockDisplayViewController: UIViewController, UIScrollViewDelegate {
     
-    var scrollView:UIScrollView
-//    var viewL, viewM, viewR : UIView
+    let scrollView:UIScrollView
+    let viewL, viewM, viewR : WICClockDispView
     
     let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
     let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
@@ -24,6 +24,12 @@ class WICClockDisplayViewController: UIViewController {
 
     required init?(coder aDecoder: NSCoder) {
         self.scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
+        self.viewL = WICClockDispView(frame: CGRect(x: 0, y: 0, width: self.scrollView.width, height: self.scrollView.height))
+        self.viewL.backgroundColor = UIColor.redColor()
+        self.viewM = WICClockDispView(frame: CGRect(x: self.viewL.right, y: 0, width: self.scrollView.width, height: self.scrollView.height))
+        self.viewM.backgroundColor = UIColor.greenColor()
+        self.viewR = WICClockDispView(frame: CGRect(x: self.viewM.right, y: 0, width: self.scrollView.width, height: self.scrollView.height))
+        self.viewR.backgroundColor = UIColor.blueColor()
         super.init(coder: aDecoder)
 //        #if DEBUG //宏
 //            
@@ -37,7 +43,13 @@ class WICClockDisplayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.scrollView.delegate = self
         scrollView.contentSize = CGSize(width: SCREEN_WIDTH * CGFloat(CLOCK_TAB_NUM), height: SCREEN_HEIGHT)
+        scrollView.backgroundColor = UIColor.orangeColor()
+        scrollView.addSubview(self.viewL)
+        scrollView.addSubview(self.viewM)
+        scrollView.addSubview(self.viewR)
+        self.view.addSubview(self.scrollView)
         
     }
 
