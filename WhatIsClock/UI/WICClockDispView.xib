@@ -7,9 +7,9 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WICClockDispView" customModule="WhatIsClock" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WICClockDispView" customModule="WhatIsClock" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -36,6 +36,10 @@
                 <constraint firstAttribute="trailingMargin" secondItem="pl3-dp-Pw2" secondAttribute="trailing" id="spB-U6-g8m"/>
                 <constraint firstItem="pl3-dp-Pw2" firstAttribute="top" secondItem="p3t-17-aCM" secondAttribute="bottom" id="wao-Ft-25Y"/>
             </constraints>
+            <connections>
+                <outlet property="bannerImgView" destination="p3t-17-aCM" id="i0V-uS-SP0"/>
+                <outlet property="clocksTableView" destination="pl3-dp-Pw2" id="mgl-Uq-vzQ"/>
+            </connections>
         </view>
     </objects>
     <resources>

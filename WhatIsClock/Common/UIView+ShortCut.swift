@@ -37,20 +37,24 @@ extension UIView{
 extension UIView
 {
     class func initFromNib() -> UIView {
-        let mainBundle = NSBundle.mainBundle()
-        let className  = NSStringFromClass(self).componentsSeparatedByString(".").last ?? ""
-        
-        if ( mainBundle.pathForResource(className, ofType: "nib") != nil ) {
-            let objects = mainBundle.loadNibNamed(className, owner: self, options: [:])
-            
-            for object in objects {
-                if let view = object as? UIView {
-                    return view
-                }
-            }
-        }
-        
-        return UIView(frame: CGRectZero)
+        //方法1
+        let nib = UINib(nibName: NSStringFromClass(self).componentsSeparatedByString(".").last ?? "", bundle: nil)
+        return nib.instantiateWithOwner(self, options: nil).first as! UIView
+        //方法2
+//        let mainBundle = NSBundle.mainBundle()
+//        let className  = NSStringFromClass(self).componentsSeparatedByString(".").last ?? ""
+//
+//        if ( mainBundle.pathForResource(className, ofType: "nib") != nil ) {
+//            let objects = mainBundle.loadNibNamed(className, owner: self, options: [:])
+//            
+//            for object in objects {
+//                if let view = object as? UIView {
+//                    return view
+//                }
+//            }
+//        }
+//        
+//        return UIView(frame: CGRectZero)
     }
 }
 

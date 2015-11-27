@@ -10,25 +10,20 @@ import UIKit
 
 class WICClockDisplayViewController: UIViewController, UIScrollViewDelegate {
     
-    let scrollView:UIScrollView
-    let viewL, viewM, viewR : WICClockDispView
+    let scrollView:UIScrollView!
+    let viewL, viewM, viewR : WICClockDispView!
     
     let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
     let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
     let CLOCK_TAB_NUM = 3
-    
-//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-//        self.scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
-//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-//    }
 
     required init?(coder aDecoder: NSCoder) {
         self.scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
-        self.viewL = WICClockDispView.initFromNib()
-        self.viewM = WICClockDispView.initFromNib()
+        self.viewL = WICClockDispView.initFromNib() as! WICClockDispView
+        self.viewM = WICClockDispView.initFromNib() as! WICClockDispView
+        self.viewR =  WICClockDispView.initFromNib() as! WICClockDispView
 //        self.viewM =  NSBundle.mainBundle().loadNibNamed("WICClockDispView", owner: nil, options: nil)[0] as! WICClockDispView
 
-        self.viewR =  WICClockDispView.initFromNib()
         super.init(coder: aDecoder)
 //        #if DEBUG //宏
 //            
