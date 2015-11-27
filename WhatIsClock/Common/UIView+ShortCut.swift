@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+let SCREEN_WIDTH = Double(UIScreen.mainScreen().bounds.width)
+let SCREEN_HEIGHT = Double(UIScreen.mainScreen().bounds.height)
+
 extension UIView{
     var top:Double{
         return Double(self.frame.origin.y)
