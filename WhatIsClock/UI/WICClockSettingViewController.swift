@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MediaPlayer
 
-class WICClockSettingViewController: UITableViewController {
+class WICClockSettingViewController: UITableViewController, MPMediaPickerControllerDelegate {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var timeLabel: UILabel!
@@ -18,7 +19,23 @@ class WICClockSettingViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        selectRing()
         
+    }
+    
+    func selectRing(){
+        let ringPicker = MPMediaPickerController(mediaTypes: MPMediaType.AnyAudio)
+        ringPicker.delegate = self
+        ringPicker.prompt = NSLocalizedString("select a ring", comment: "select a ring for clock")
+        self .presentViewController(ringPicker, animated: true, completion: nil)
+    }
+    
+    func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
