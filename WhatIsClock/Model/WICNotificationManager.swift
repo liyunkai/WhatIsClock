@@ -56,15 +56,13 @@ class WICNotificationManager {
     }
     
     class func registerClock(model: WICClockSettingModel){
-        let clockNotif = UILocalNotification()
-        clockNotif.fireDate = model.fireDate
-        clockNotif.repeatInterval = model.loop!
-        clockNotif.timeZone = NSTimeZone()
-        clockNotif.alertBody = model.message
+        guard let clockNotif = model.notification else{
+            return
+        }
         clockNotif.alertAction = NSLocalizedString("戳这里", comment: "闹钟响了之后关闹钟的按钮")
         clockNotif.soundName = UILocalNotificationDefaultSoundName//目前是默认提示音
         if #available(iOS 8.2, *) {
-            clockNotif.alertTitle = model.soundID
+            clockNotif.alertTitle = clockNotif.alertBody
         } else {
             // Fallback on earlier versions
         }
