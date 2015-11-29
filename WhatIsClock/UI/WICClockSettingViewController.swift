@@ -50,6 +50,7 @@ class WICClockSettingViewController: UITableViewController, MPMediaPickerControl
 //        WICTTS.speak(Txt: self.timeLabel.text!)
         let model:WICClockSettingModel = WICClockSettingModel(fireDate: timeSetted, isRepeat: false, soundID: "oneSound", loop: NSCalendarUnit.Minute, isTaskOn: true, message: String.localizedStringWithFormat("%@", timeSetted), isVerbose: true)
         WICNotificationManager.registerClock(model)
+        WICDBManager.addClock(model, tableName:WICDBManager.TNAME_DAILY_CLOCKS)
     }
 
 

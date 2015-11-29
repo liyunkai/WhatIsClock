@@ -14,8 +14,8 @@ class WICClockSettingModel{
     
     var isTaskOn:Bool//闹钟任务是否开启
     var isVerbose:Bool
-    var notification : UILocalNotification?//uil足够记录闹钟了
-    let notifID: Int//时间戳
+    var notification : UILocalNotification?//uilocalnotif足够记录闹钟了
+    let notifID: Int//创建时的时间戳
     var isOn: Bool//闹钟是开启还是关闭
     let KEY_NOTIF_ID = "KEY_NOTIF_ID"
     
@@ -41,28 +41,4 @@ class WICClockSettingModel{
         
     }
     
-//    class func initWithDBRecord(){
-//    
-//    }
-    
-    func test(){//guard // do try catch //  func() throws -> TYPE  //defer{} 做在return之前的收尾工作
-        do{
-            _ = try Connection("db.sqlite3")
-        }catch{
-            print("存储空间已满?")
-            return
-        }
-    }
-}
-
-class WICDailyClockList {
-    let DailyClockList = Table("DailyClockList")
-}
-
-class WICSpecialClockList {
-    let SpecialClockList = Table("SpecialClockList")
-}
-
-class WICSchedualClockList {
-     let SchedualClockList = Table("SchedualClockList")
 }
