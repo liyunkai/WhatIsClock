@@ -66,7 +66,7 @@ class WICDBManager {
             return
         }
     }
-    
+    /*  添加一个闹钟 */
     class func addClock(model:WICClockSettingModel, tableName:TNAME) {
         guard let db = g_db else{
             print("db add clock error")
@@ -98,18 +98,23 @@ class WICDBManager {
             print("sound \(clock[soundName]) isverbose  ringID \(clock[soundName]) clockID \(clock[clockID])")
         }
     }
-    
-    class func deleteClock(table: String, notifID:Int64) {
+    /*  删除某个闹钟 */
+    class func deleteClock(table: String, clockID:Int64) {
         
     }
-
+    /*  获取闹钟列表 */
     class func clockList(table:String) -> [WICClockSettingModel]{
         
         
         return [WICClockSettingModel]()
     }
-    
-    class func invalidClock(table: String, notifID: Int64) -> Bool {
+    /* 关闹钟 */
+    class func invalidClock(table: String, clockID: Int64) -> Bool {
+        
+        return true
+    }
+    /* 修改闹钟 */
+    class func updateClock(table: String, clockID: Int64) -> Bool {
         
         return true
     }
