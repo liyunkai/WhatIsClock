@@ -43,3 +43,33 @@ struct WICClockSettingModel{
     }
     
 }
+
+
+struct WICDayUnit: OptionSetType {
+    init(rawValue: Self.RawValue) {
+        
+    }
+    
+    static var Monday: WICDayUnit {
+        return 1<<1
+    }
+    static var Tuesday: WICDayUnit
+    static var Wednesday: WICDayUnit
+    static var Thursday: WICDayUnit
+    static var Friday: WICDayUnit
+    static var Saturday: WICDayUnit
+    static var Sunday: WICDayUnit
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
