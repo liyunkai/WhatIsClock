@@ -82,8 +82,21 @@ class WICDBManager {
             print("sound \(clock[soundName]) isverbose  firedate \(clock[fireDate]) notifID \(clock[notifID])")
         }
     }
-
     
+    class func deleteClock(table: String, notifID:Int64) {
+        
+    }
+
+    class func clockList(table:String) -> [WICClockSettingModel]{
+        
+        
+        return [WICClockSettingModel]()
+    }
+    
+    class func invalidClock(table: String, notifID: Int64) -> Bool {
+        
+        return true
+    }
     
 }
 
