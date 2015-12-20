@@ -1,78 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WICLoopSelectView" customModule="WhatIsClock" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3B-Uv-hYa">
-                    <rect key="frame" x="51" y="62" width="46" height="30"/>
+                    <rect key="frame" x="28" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icX-kM-YtE">
-                    <rect key="frame" x="140" y="62" width="46" height="30"/>
+                    <rect key="frame" x="117" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-Kp-YWb">
-                    <rect key="frame" x="226" y="62" width="46" height="30"/>
+                    <rect key="frame" x="203" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL1-Ag-bSh">
-                    <rect key="frame" x="298" y="62" width="46" height="30"/>
+                    <rect key="frame" x="275" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXo-Bu-5EX">
-                    <rect key="frame" x="369" y="62" width="46" height="30"/>
+                    <rect key="frame" x="346" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phX-u0-shI">
-                    <rect key="frame" x="451" y="62" width="46" height="30"/>
+                    <rect key="frame" x="428" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8d-pd-09W">
-                    <rect key="frame" x="525" y="62" width="46" height="30"/>
+                    <rect key="frame" x="502" y="18" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwP-Fq-eqT">
-                    <rect key="frame" x="51" y="124" width="46" height="30"/>
-                    <state key="normal" title="每周"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-MY-D3Z">
-                    <rect key="frame" x="140" y="124" width="46" height="30"/>
-                    <state key="normal" title="每月"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYl-OO-wIq">
-                    <rect key="frame" x="226" y="124" width="46" height="30"/>
-                    <state key="normal" title="每年"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28C-TJ-vwG">
-                    <rect key="frame" x="290" y="124" width="46" height="30"/>
-                    <state key="normal" title="每天"/>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上面是周一-七，或者下面纪念日。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-Jc-jmz">
-                    <rect key="frame" x="51" y="95" width="285" height="21"/>
+                    <rect key="frame" x="28" y="51" width="285" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="和" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-0T-c38">
-                    <rect key="frame" x="51" y="168" width="193" height="21"/>
+                    <rect key="frame" x="28" y="80" width="193" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-nJ-6cN">
-                    <rect key="frame" x="51" y="197" width="135" height="30"/>
-                    <state key="normal" title="自定义周期天数"/>
+                    <rect key="frame" x="57" y="80" width="135" height="30"/>
+                    <state key="normal" title="自定义周期"/>
                 </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kod-lq-bDW">
+                    <rect key="frame" x="42" y="118" width="327" height="29"/>
+                    <segments>
+                        <segment title="天"/>
+                        <segment title="周"/>
+                        <segment title="月"/>
+                        <segment title="小时"/>
+                    </segments>
+                </segmentedControl>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="时间" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKn-m0-zfd">
+                    <rect key="frame" x="200" y="81" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="F" destination="GXo-Bu-5EX" id="Fmz-th-CqP"/>
+                <outlet property="MBtn" destination="f3B-Uv-hYa" id="5hj-ig-3mu"/>
+                <outlet property="Sat" destination="phX-u0-shI" id="srS-tT-2iG"/>
+                <outlet property="Sun" destination="Z8d-pd-09W" id="X6k-It-JkR"/>
+                <outlet property="Th" destination="tL1-Ag-bSh" id="SyI-km-0Uh"/>
+                <outlet property="TuBtn" destination="icX-kM-YtE" id="0Yo-tM-YB8"/>
+                <outlet property="WDay" destination="TLD-Kp-YWb" id="cdx-Iw-vkS"/>
+                <outlet property="timeNum" destination="MKn-m0-zfd" id="6af-X8-QSU"/>
+            </connections>
         </view>
     </objects>
 </document>

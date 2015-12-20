@@ -21,9 +21,10 @@
 		9399530C1BFC118F002C202D /* WICNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399530B1BFC118F002C202D /* WICNotificationManager.swift */; };
 		93A26C0B1BFB1766003588F3 /* WICClockSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A26C0A1BFB1766003588F3 /* WICClockSettingModel.swift */; };
 		93D3E15D1BFDD43F00161F3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D3E15F1BFDD43F00161F3A /* Localizable.strings */; };
-		E42B04AD1C0941C9008EF183 /* WICLoopSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42B04AC1C0941C9008EF183 /* WICLoopSelectView.xib */; settings = {ASSET_TAGS = (); }; };
+		E42B04AD1C0941C9008EF183 /* WICLoopSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42B04AC1C0941C9008EF183 /* WICLoopSelectView.xib */; };
 		E42B04AF1C0942D6008EF183 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E42B04AE1C0942D6008EF183 /* libsqlite3.tbd */; };
-		E42B04B21C0AA9B7008EF183 /* WICDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B04B11C0AA9B7008EF183 /* WICDBManager.swift */; settings = {ASSET_TAGS = (); }; };
+		E42B04B21C0AA9B7008EF183 /* WICDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B04B11C0AA9B7008EF183 /* WICDBManager.swift */; };
+		E45ECD771C267F5300F4E2A3 /* WICLoopSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45ECD761C267F5300F4E2A3 /* WICLoopSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		E42B04AC1C0941C9008EF183 /* WICLoopSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WICLoopSelectView.xib; sourceTree = "<group>"; };
 		E42B04AE1C0942D6008EF183 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E42B04B11C0AA9B7008EF183 /* WICDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WICDBManager.swift; path = ../Common/WICDBManager.swift; sourceTree = "<group>"; };
+		E45ECD761C267F5300F4E2A3 /* WICLoopSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICLoopSelectView.swift; sourceTree = "<group>"; };
 		FFB8FB9A7B18BE618F2A593E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 				9304AD5E1C06DD9B00A861C2 /* WICClockDispView.xib */,
 				9304AD601C06DEFF00A861C2 /* WICClockDispView.swift */,
 				E42B04AC1C0941C9008EF183 /* WICLoopSelectView.xib */,
+				E45ECD761C267F5300F4E2A3 /* WICLoopSelectView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				9304AD661C06E6EE00A861C2 /* UIView+ShortCut.swift in Sources */,
 				9348AB0F1BFAC2A30041EBC2 /* WICClockDisplayViewController.swift in Sources */,
+				E45ECD771C267F5300F4E2A3 /* WICLoopSelectView.swift in Sources */,
 				9348AB121BFAC8260041EBC2 /* WICTTS.swift in Sources */,
 				9348AB101BFAC2A30041EBC2 /* WICClockSettingViewController.swift in Sources */,
 				E42B04B21C0AA9B7008EF183 /* WICDBManager.swift in Sources */,

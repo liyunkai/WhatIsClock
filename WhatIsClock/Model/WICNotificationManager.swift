@@ -60,7 +60,8 @@ class WICNotificationManager {
             return
         }
         clockNotif.alertAction = NSLocalizedString("戳这里", comment: "闹钟响了之后关闹钟的按钮")
-        clockNotif.soundName = UILocalNotificationDefaultSoundName//目前是默认提示音
+        clockNotif.soundName = model.notification?.soundName
+        
         if #available(iOS 8.2, *) {
             clockNotif.alertTitle = clockNotif.alertBody
         } else {

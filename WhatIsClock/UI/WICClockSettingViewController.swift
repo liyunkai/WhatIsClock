@@ -12,8 +12,14 @@ import MediaPlayer
 class WICClockSettingViewController: UITableViewController, MPMediaPickerControllerDelegate {
 
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var timeLabel: UILabel!
     
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    @IBOutlet weak var isVerboseSwitch: UISwitch!
+    
+    @IBOutlet weak var isClockTaskOn: UISwitch!
+    
+    @IBOutlet weak var ringLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -45,10 +51,15 @@ class WICClockSettingViewController: UITableViewController, MPMediaPickerControl
     
     
     @IBAction func onRegisterClockBtnHit(sender: AnyObject) {
-        let timeSetted = self.datePicker!.date.dateByAddingTimeInterval(10)
-        self.timeLabel.text = String(timeSetted)
-//        WICTTS.speak(Txt: self.timeLabel.text!)
-        let model:WICClockSettingModel = WICClockSettingModel(fireDate: timeSetted, isRepeat: false, soundID: "oneSound", loop: NSCalendarUnit.Minute, isTaskOn: true, message: String.localizedStringWithFormat("%@", timeSetted), isVerbose: true)
+        let clockID = Int(NSDate().timeIntervalSince1970)
+        let timeSetted = self.datePicker!.date
+        let message = messageLabel.text!
+        let isclocktaskOn = isClockTaskOn!.on
+        let isverbose = isVerboseSwitch!.on
+        let ringID = UILocalNotificationDefaultSoundName//ringLabel.text!
+        let loop = NSCalendarUnit.Minute
+        
+        let model:WICClockSettingModel = WICClockSettingModel(clockID: clockID, fireDate: timeSetted, soundID: ringID, loop: loop, isTaskOn: isclocktaskOn, message: message, isVerbose: isverbose)
         WICNotificationManager.registerClock(model)
         WICDBManager.addClock(model, tableName:WICDBManager.TNAME_DAILY_CLOCKS)
     }

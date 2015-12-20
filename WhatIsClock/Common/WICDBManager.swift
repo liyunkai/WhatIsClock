@@ -17,13 +17,14 @@ class WICDBManager {
     static let TNAME_SPECIAL_CLOCKS    = "test_spec"//"TNAME_SPECIAL_CLOCKS"
     static let TNAME_SCHEDUAL_CLOCKS = "test_sche"//"TNAME_SCHEDUAL_CLOCKS"
     
-    static let notifID = Expression<Int64>("notifID")
-    static let isTaskOn = Expression<Bool?>("isTaskOn")
-    static let isVerbose = Expression<Bool?>("isVerbose")
+    static let clockID = Expression<Int64>("clockID")
+    static let isTaskOn = Expression<Bool>("isTaskOn")
+    static let isVerbose = Expression<Bool>("isVerbose")
     static let fireDate = Expression<Int64>("fireDate")
-    static let soundName = Expression<String?>("soundName")
+    static let soundName = Expression<String>("soundName")
     static let message = Expression<String?>("message")
-    static let loop = Expression<String?>("loop")
+    static let loop = Expression<String>("loop")
+    static let isOn = Expression<Bool>("isOn")
     
     static let g_db:Connection? = {
         let path = NSSearchPathForDirectoriesInDomains(
@@ -51,13 +52,14 @@ class WICDBManager {
         
         do{
             try db.run(table.create(temporary: false, ifNotExists: true, block: {t in
-                t.column(notifID)
+                t.column(clockID)
                 t.column(isTaskOn)
                 t.column(isVerbose)
                 t.column(fireDate)
                 t.column(soundName)
                 t.column(message)
                 t.column(loop)
+                t.column(isOn)
                 }))
         }
         catch{
@@ -71,7 +73,21 @@ class WICDBManager {
             return
         }
         let table = Table(tableName)
-        let clockInsert = table.insert(notifID <- 1, fireDate <- 128246, soundName <- "aa", message <- "gagaga")
+        guard let notif = model.notification else{
+            print("model error")
+            return
+        }
+        let clockFireDate = Int64(notif.fireDate!.timeIntervalSince1970)
+        let clockLoop = String(notif.repeatInterval)
+        
+        let clockInsert = table.insert(clockID <- Int64(model.clockID),
+                                        fireDate <- clockFireDate,
+                                        soundName <- notif.soundName!,
+                                        message <-  notif.alertBody,
+                                        isTaskOn <- model.isTaskOn,
+                                        isVerbose <- model.isVerbose,
+                                        isOn <- model.isOn,
+                                        loop <- clockLoop)
         do{
             let rowId = try db.run(clockInsert)
             print(rowId)
@@ -79,7 +95,7 @@ class WICDBManager {
             print(error)
         }
         for clock in db.prepare(table){
-            print("sound \(clock[soundName]) isverbose  firedate \(clock[fireDate]) notifID \(clock[notifID])")
+            print("sound \(clock[soundName]) isverbose  ringID \(clock[soundName]) clockID \(clock[clockID])")
         }
     }
     
