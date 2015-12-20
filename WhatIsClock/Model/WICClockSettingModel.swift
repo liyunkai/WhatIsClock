@@ -10,7 +10,7 @@ import Foundation
 import SQLite
 import UIKit
 
-class WICClockSettingModel{
+struct WICClockSettingModel{
     
     var isTaskOn:Bool//闹钟任务是否开启
     var isVerbose:Bool
